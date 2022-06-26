@@ -18,6 +18,7 @@
 
 .ProfileImages>img:nth-of-type(1){
     width: 100%;
+    max-height: 20rem;
 }
 
 .ProfileImages>img:nth-of-type(2)

@@ -26,21 +26,21 @@ const InfoCard = () => {
         <span>
           <b>Status </b>
         </span>
-        <span>in Relationship</span>
+        <span>Single</span>
       </div>
 
       <div className="info">
         <span>
           <b>Lives in </b>
         </span>
-        <span>Multan</span>
+        <span>India</span>
       </div>
 
       <div className="info">
         <span>
-          <b>Works at </b>
+          <b>Studies at </b>
         </span>
-        <span>Zainkeepscode inst</span>
+        <span>UIT RGPV</span>
       </div>
 
       <button className="button logout-button">Logout</button>
