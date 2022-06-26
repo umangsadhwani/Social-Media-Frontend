@@ -13,7 +13,7 @@ const Auth = () => {
         </div>
       </div>
 
-      <LogIn/>
+      <SignUp/>
     </div>
   );
 };

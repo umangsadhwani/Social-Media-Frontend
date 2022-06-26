@@ -20,7 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(106.23deg, #f99827, #f95f35 100%);
+    background: linear-gradient(98.63deg, #8CC0DE 0%, #867af3 100%);
+    /* --buttonBg: linear-gradient(98.63deg, #8CC0DE 0%, #867af3 100%); */
     border-radius: 5px;
     padding: 4px;
     color: white;
