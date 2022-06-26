@@ -10,7 +10,7 @@ import FollowersCard from '../FollowersCard/FollowersCard'
 import TrendCard from '../TrendCard/TrendCard'
 
 const RightSide = () => {
-    const ProfilePage = true;
+    const ProfilePage = false;
   return (
     <div className="RightSide">
         <div className="navIcons">
@@ -20,9 +20,7 @@ const RightSide = () => {
             <UilUserCircle/>
         </div>
         <div class="foll">
-        {ProfilePage && (
-            <FollowersCard/>
-        )}
+        {ProfilePage? <FollowersCard/>:<TrendCard/>}
         </div>
         
         <button className='button r-button'>Share</button>

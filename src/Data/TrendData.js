@@ -20,7 +20,7 @@ export const TrendData= [
       shares: 71.9,
     },
     {
-      name: "Daar ka mahool",
+      name: "Learning",
       shares: 20,
     },
   ];
