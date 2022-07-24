@@ -21,13 +21,13 @@
   }
   
   .a-left > img {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
   }
   
   .Webname > h1 {
       font-size: 3rem;
-      background-color: red;
+      background-color: var(--buttonBg);
     
       /* Create the gradient. */
       background-image: var(--buttonBg);

@@ -1,26 +1,26 @@
 export const TrendData= [
     {
-      name: "Umang",
+      name: "PresidentOfIndia",
       shares: 97,
     },
     {
-      name: "Shubham",
+      name: "NeerajChopra",
       shares: 80.5,
     },
     {
-      name: "Paridhi",
+      name: "WIvsIND",
       shares: 75.5,
     },
     {
-      name: "Varun",
+      name: "Monsoon",
       shares: 72,
     },
     {
-      name: "Minor Project",
+      name: "ShareMarket",
       shares: 71.9,
     },
     {
-      name: "Learning",
+      name: "FloodInAssam",
       shares: 20,
     },
   ];

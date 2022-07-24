@@ -1,19 +1,21 @@
 import React from "react";
 import "./Auth.css";
 import Logo from "../../img/logo.png";
+import Peacock from "../../img/peacock.png"
 
 const Auth = () => {
   return (
     <div className="Auth">
       <div className="a-left">
-        <img src={Logo} alt="" />
+      {/* <img src={Logo} alt="" /> */}
+        <img src={Peacock} alt="" />
         <div className="Webname">
           <h1>Va'SUP Media</h1>
-          <h6>Explore the ideas throughout the world</h6>
+          <h6>For the Indians . By the Indians</h6>
         </div>
       </div>
 
-      <SignUp/>
+      <LogIn/>
     </div>
   );
 };

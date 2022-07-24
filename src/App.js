@@ -12,8 +12,8 @@ function App() {
       <div className="blur" style={{top: '36%',left: '-8rem' }}></div> */}
 
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="Auth" element={ <Auth/> } />
+        <Route path="/Home" element={ <Home/> } />
+        <Route path="/" element={ <Auth/> } />
         <Route path="Profile" element={ <Profile/> } />
       </Routes>
       {/* <Home/> */}
