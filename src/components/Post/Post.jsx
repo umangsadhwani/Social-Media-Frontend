@@ -4,8 +4,23 @@ import Comment from "../../img/comment.png"
 import Share from "../../img/share.png"
 import Heart from "../../img/like.png"
 import NotLike from "../../img/notlike.png"
+import { useState } from 'react'
+
+
+
 
 const Post = ({data}) => {
+
+    const [like, setLike] = useState(false);
+
+    const LikeDislike = ()=>{
+        if(like==true){
+            setLike(false);
+        }
+        else{
+            setLike(true);
+        }
+    }
 
   return (
     <div className="Post">
@@ -18,7 +33,8 @@ const Post = ({data}) => {
             </video>
         )}
         <div className="postReact">
-            <img src={data.liked?Heart:NotLike} alt="" />
+            {/* <img src={data.liked?Heart:NotLike} alt="" onClick={() => setLike(true)}/> */}
+            <img src={like?Heart:NotLike} alt="" onClick={() => LikeDislike()}/>
             <img src={Comment} alt="" />
             <img src={Share} alt="" />
         </div>
