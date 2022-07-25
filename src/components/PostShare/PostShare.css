@@ -80,3 +80,20 @@
     border-radius: 0.5rem;
 }
 
+
+@media screen and (max-width: 768px){
+
+    .postOptions{
+        flex-wrap: wrap;
+    }
+    .option{
+        width: 30%;
+    }
+    .ps-button{
+        width: 70%;
+    }
+    .inp{
+        width: 90%;
+        margin: auto;
+    }
+}

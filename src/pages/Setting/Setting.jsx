@@ -1,8 +1,6 @@
 import React from 'react'
-import Posts from '../Posts/Posts'
-import PostShare from '../PostShare/PostShare'
-import "./PostSide.css"
-
+import "./Setting.css"
+import InfoCard from '../../components/InfoCard/InfoCard'
 import {UilUserCircle} from '@iconscout/react-unicons'
 import {UilSetting} from '@iconscout/react-unicons'
 
@@ -10,9 +8,8 @@ import Comment from '../../img/comment.png'
 import Home from '../../img/home.png'
 
 import { useState, useEffect } from 'react'
-const PostSide = () => {
-
-  const [mobile,setMobile] = useState(false);
+const Setting = () => {
+    const [mobile,setMobile] = useState(false);
   
   useEffect(() => {
 
@@ -20,19 +17,17 @@ const PostSide = () => {
       setMobile(true);
     }
   });
-
   return (
-    <div className="PostSide">
+    <div className='Setting'>
         {mobile? <div className="navIcons">
             <img src={Home} alt="" />
             <img src={Comment} alt="" />
             <UilSetting/>
             <UilUserCircle/>
         </div> : ""}
-        <PostShare/>
-        <Posts/>
+        <InfoCard/>
     </div>
   )
 }
 
-export default PostSide
+export default Setting

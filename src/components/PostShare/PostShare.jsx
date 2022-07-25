@@ -45,7 +45,7 @@ const PostShare = () => {
     <div className="PostShare">
         <img src={ProfileImage} alt="" /> 
         <div>
-          <input type="text"  placeholder='whats happening'/>
+          <input type="text"  placeholder='whats happening' className='inp'/>
           <div className="postOptions">
             <div className="option" style={{color : "var(--photo)"}}  onClick={()=>imageRef.current.click()} >
               <UilScenery/>

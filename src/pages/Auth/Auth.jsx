@@ -4,6 +4,8 @@ import Logo from "../../img/logo.png";
 import Peacock from "../../img/peacock.png"
 
 const Auth = () => {
+
+
   return (
     <div className="Auth">
       <div className="a-left">
@@ -15,7 +17,7 @@ const Auth = () => {
         </div>
       </div>
 
-      <LogIn/>
+      <SignUp/>
     </div>
   );
 };

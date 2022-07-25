@@ -1,0 +1,8 @@
+.Setting {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+  }

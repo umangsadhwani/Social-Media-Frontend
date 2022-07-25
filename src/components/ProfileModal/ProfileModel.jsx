@@ -1,7 +1,21 @@
 import { Modal, useMantineTheme } from "@mantine/core";
+import { useState , useEffect} from "react";
 
 function ProfileModal({ modalOpened, setModalOpened }) {
   const theme = useMantineTheme();
+
+  const [mobile,setMobile] = useState(false);
+  const [sz,setSz] = useState("55%");
+  useEffect(() => {
+
+    if(window.innerWidth<768){
+      setMobile(true);
+    }
+
+    if(mobile){
+      setSz("100%");
+    }
+  });
 
   return (
     <Modal
@@ -12,7 +26,7 @@ function ProfileModal({ modalOpened, setModalOpened }) {
       }
       overlayOpacity={0.55}
       overlayBlur={3}
-      size="55%"
+      size={sz}
       opened={modalOpened}
       onClose={() => setModalOpened(false)}
     >

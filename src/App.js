@@ -4,7 +4,7 @@ import "./App.css"
 import Auth from "./pages/Auth/Auth";
 import Home from "./pages/home/Home"
 import Profile from "./pages/Profile/Profile";
-
+import Setting from "./pages/Setting/Setting";
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,10 @@ function App() {
       <Routes>
         <Route path="/Home" element={ <Home/> } />
         <Route path="/" element={ <Auth/> } />
+        <Route path="/signUp" element={ <Auth/> } />
         <Route path="Profile" element={ <Profile/> } />
+        <Route path="Setting" element={ <Setting/> } />
+        
       </Routes>
       {/* <Home/> */}
       {/* <Profile/> */}
