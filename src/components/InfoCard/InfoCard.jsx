@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./InfoCard.css";
 import { UilPen } from "@iconscout/react-unicons";
 import ProfileModel from "../ProfileModal/ProfileModel";
-
+import { useNavigate } from "react-router-dom";
 const InfoCard = () => {
+  const navigate = useNavigate();
   const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className="InfoCard">
@@ -43,7 +44,14 @@ const InfoCard = () => {
         <span>UIT RGPV</span>
       </div>
 
-      <button className="button logout-button">Logout</button>
+      <button
+        className="button logout-button"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Logout
+      </button>
     </div>
   );
 };
